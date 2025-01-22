@@ -4,14 +4,15 @@ require("dotenv").config();
 
 exports.sendEmail = async (req, res) => {
     try {
-        const { userFirstName, userLastName, userEmail, userNumber, date } = req.body;
+        const { userFirstName, userLastName, userEmail, userNumber, date } =
+            req.body;
 
         if (!userEmail) {
             return res.status(400).json({ message: "Email is required." });
         }
 
         const options = {
-            to: "nelsonsakhile@gmail.com",
+            to: "royalhealthmail@gmail.com",
             subject: "Appointment request",
             message: {
                 username: userFirstName,
