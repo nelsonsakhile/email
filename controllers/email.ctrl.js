@@ -11,7 +11,7 @@ exports.sendEmail = async (req, res) => {
         }
 
         const options = {
-            to: "royalhealthmail@gmail.com",
+            to: "nelsonsakhile@gmail.com",
             subject: "Appointment request",
             message: {
                 username: userFirstName,
